@@ -1,9 +1,9 @@
 /*!
-Theme Name: Quotes on Dev Starter Theme
+Theme Name: Quotes on Dev
 Theme URI: http://underscores.me/
-Author: RED Academy
+Author: Ronald Gaskin
 Author URI: http://www.redacademy.com
-Description: A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+Description: A custom theme for quotes on dev.
 Version: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -593,3 +593,11 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
+.hero-img {
+  height: 50px;
+  min-width: 1080px;
+  width: 50vw;
+  max-height: 100%;
+  display: block;
+  background-color: blue;
+  background-image: url(/project-05/assets/quotesondev.wordpress.2018-06-19.xml); }
