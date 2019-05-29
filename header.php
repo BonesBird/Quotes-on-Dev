@@ -28,7 +28,12 @@
 				<p class="site-description"><?php bloginfo('description'); ?></p>
 			</div><!-- .site-branding -->
 
-			<div class="hero-img"></div>
+			<div class="hero-img">
+				<a href="<?php echo get_the_permalink(); ?>">
+					<img src="<?php echo get_template_directory_uri() . '/assets/images/qod-logo.svg'; ?>" />
+				</a>
+			</div>
+
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>

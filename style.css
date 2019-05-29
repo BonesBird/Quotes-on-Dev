@@ -593,11 +593,11 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
-.hero-img {
-  height: 50px;
-  min-width: 1080px;
-  width: 50vw;
-  max-height: 100%;
-  display: block;
-  background-color: blue;
-  background-image: url(/project-05/assets/quotesondev.wordpress.2018-06-19.xml); }
+img {
+  height: auto;
+  max-width: 100%; }
+
+body {
+  background-color: black;
+  -webkit-text-decoration-color: white;
+          text-decoration-color: white; }
