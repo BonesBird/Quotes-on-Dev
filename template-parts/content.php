@@ -21,13 +21,15 @@ $source_url = get_post_meta(get_the_ID(), '_qod_quote_source_url', true);
 		<?php the_title('<h2 class="entry-title>&mdash; ', '</h2>'); ?>
 
 		<?php if ($source && $source_url) : ?>
-			<span class="source">,
-				<a href="<?php echo $source_url; ?></span>">
-					<?php echo $source; ?>
+			<span class="source">
+				<a href="<?php echo $source_url ?>"><?php $source ?></a>,
+			</span>
+			<span>
+				<?php echo $source; ?>
 			</span>
 
 		<?php elseif ($source) : ?>
-			<span class="source">, <?php echo $source; ?></span>
+			<span class="source"> <?php echo $source; ?></span>
 
 		<?php else : ?>
 			<span class="source"></span>

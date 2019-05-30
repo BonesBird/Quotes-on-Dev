@@ -1,10 +1,13 @@
 .site-footer {
   display: block;
+
   .site-info {
     justify-content: flex-end;
     display: flex;
     flex-wrap: wrap;
     margin: 4.5rem 0 3rem;
+    float: right;
+
     .menu-item {
       display: inline-flex;
       list-style: none;
@@ -13,7 +16,10 @@
       border-right: 1px solid #fff;
       line-height: 1;
       padding: 0 1rem;
-      float: right;
+
+      a {
+        color: green;
+      }
     }
   }
 }

@@ -14,11 +14,14 @@
     margin-top: inherit;
   }
 
-  .hero-img {
+  img {
     display: block;
-    height: 100%;
+    height: auto;
+    width: 700px;
     max-width: 100%;
+    margin: 0 auto;
     border: 0;
     cursor: pointer;
+    height: auto;
   }
 }
