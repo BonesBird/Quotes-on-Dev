@@ -1,4 +1,24 @@
-img {
-  height: auto;
-  max-width: 100%;
+#page {
+  //   display: block;
+  //   margin: 0 auto;
+  //   max-width: 600px;
+  //   padding: 2.5%;
+  //   width: 100%;
+
+  //   color: #fff;
+  //   font-family: Exo Web, sans-serif;
+  //   font-size: 1rem;
+  //   line-height: 1.5;
+
+  .site-header {
+    margin-top: inherit;
+  }
+
+  .hero-img {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    border: 0;
+    cursor: pointer;
+  }
 }
