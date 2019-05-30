@@ -11,22 +11,10 @@
 
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
-		<a href="<?php echo esc_url('https://wordpress.org/'); ?>"><?php printf(esc_html('Proudly powered by %s'), 'WordPress'); ?></a>
-		<section class="footer-qod">
-			<ul>
-				<Nav class="footer-nav">
-					<li>
-						<div class="about">About</div>
-					</li>
-					<li>
-						<div class="archive">Archive</div>
-					</li>
-					<li>
-						<div class="submit-a-quote">Submit a quote</div>
-					</li>
-				</Nav>
-			</ul>
-		</section>
+		<nav id="site-navigation" class="main-navigation" role="navigation">
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
+			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+		</nav><!-- #site-navigation -->
 	</div><!-- .site-info -->
 
 </footer><!-- #colophon -->

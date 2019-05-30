@@ -621,15 +621,24 @@ object {
 --------------------------------------------------------------*/
 /* All Archives Page */
 /* Submit a Quote Page */
-#page .site-header {
-  margin-top: inherit; }
-
-#page .hero-img {
+#page {
   display: block;
-  height: 100%;
-  max-width: 100%;
-  border: 0;
-  cursor: pointer; }
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 2.5%;
+  width: 100%;
+  color: #fff;
+  font-family: Exo Web, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5; }
+  #page .site-header {
+    margin-top: inherit; }
+  #page .hero-img {
+    display: block;
+    height: 100%;
+    max-width: 100%;
+    border: 0;
+    cursor: pointer; }
 
 body {
   display: -webkit-box;
@@ -644,7 +653,7 @@ body {
   color: white;
   display: block;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 1080px;
   padding: 2.5%;
   width: 100%;
   font-family: Exo Web, sans-serif;
@@ -663,6 +672,26 @@ body {
     -webkit-box-sizing: inherit;
             box-sizing: inherit; }
 
-.footer-qod .footer-nav {
-  list-style-type: none;
-  text-decoration: none; }
+.site-footer {
+  display: block; }
+  .site-footer .site-info {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 4.5rem 0 3rem; }
+    .site-footer .site-info .menu-item {
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      list-style: none;
+      margin: 1rem 0 0;
+      padding: 0;
+      border-right: 1px solid #fff;
+      line-height: 1;
+      padding: 0 1rem;
+      float: right; }
