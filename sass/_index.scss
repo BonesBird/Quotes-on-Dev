@@ -23,6 +23,9 @@ p {
     @include desktop {
       font-size: 40px;
     }
+    p {
+      min-width: 720px;
+    }
   }
 }
 
@@ -64,9 +67,9 @@ body {
       content: '\f10d';
       color: #0c0;
       position: absolute;
-      top: 18px;
+      top: 6px;
       left: -110px;
-      margin: 5px;
+      margin: 1px;
       padding: 5px;
     }
     &::after {
@@ -75,9 +78,9 @@ body {
       content: '\f10e';
       color: #0c0;
       position: absolute;
-      top: 18px;
+      top: 6px;
       right: -40px;
-      margin: 5px;
+      margin: 1px;
       padding: 5px;
     }
   }
