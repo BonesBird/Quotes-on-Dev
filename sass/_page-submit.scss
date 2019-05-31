@@ -12,4 +12,9 @@ body {
   font-family: Exo Web, sans-serif;
   font-size: 1rem;
   line-height: 1.5;
+  textarea#quote-content {
+    margin: 0px;
+    width: 729px;
+    height: 140px;
+  }
 }

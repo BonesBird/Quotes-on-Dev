@@ -38,23 +38,28 @@ body {
     margin: 0px -32px -0.5rem -2.5rem;
   }
 }
-body {
-  &::before {
-    font-family: 'FontAwesome';
-    font-size: 7em;
-    content: '\f10d';
-    color: #0c0;
-    position: absolute;
-    top: 238px;
-    left: 189px;
-  }
-  &::after {
-    font-family: 'FontAwesome';
-    font-size: 7em;
-    content: '\f10e';
-    color: #0c0;
-    position: absolute;
-    top: 238px;
-    right: 205px;
+
+.content-area {
+  position: relative;
+  padding: 4px;
+  @include desktop {
+    &::before {
+      font-family: 'FontAwesome';
+      font-size: 7em;
+      content: '\f10d';
+      color: #0c0;
+      position: absolute;
+      top: 18px;
+      left: -110px;
+    }
+    &::after {
+      font-family: 'FontAwesome';
+      font-size: 7em;
+      content: '\f10e';
+      color: #0c0;
+      position: absolute;
+      top: 18px;
+      right: -40px;
+    }
   }
 }

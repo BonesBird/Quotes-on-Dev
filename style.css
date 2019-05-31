@@ -720,6 +720,10 @@ body {
   font-family: Exo Web, sans-serif;
   font-size: 1rem;
   line-height: 1.5; }
+  body textarea#quote-content {
+    margin: 0px;
+    width: 729px;
+    height: 140px; }
 
 a:visited {
   color: green; }
@@ -770,20 +774,23 @@ body {
   body ul {
     margin: 0px -32px -0.5rem -2.5rem; }
 
-body::before {
-  font-family: 'FontAwesome';
-  font-size: 7em;
-  content: '\f10d';
-  color: #0c0;
-  position: absolute;
-  top: 238px;
-  left: 189px; }
-
-body::after {
-  font-family: 'FontAwesome';
-  font-size: 7em;
-  content: '\f10e';
-  color: #0c0;
-  position: absolute;
-  top: 238px;
-  right: 205px; }
+.content-area {
+  position: relative;
+  padding: 4px; }
+  @media (min-width: 1080px) {
+    .content-area::before {
+      font-family: 'FontAwesome';
+      font-size: 7em;
+      content: '\f10d';
+      color: #0c0;
+      position: absolute;
+      top: 18px;
+      left: -110px; }
+    .content-area::after {
+      font-family: 'FontAwesome';
+      font-size: 7em;
+      content: '\f10e';
+      color: #0c0;
+      position: absolute;
+      top: 18px;
+      right: -40px; } }

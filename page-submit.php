@@ -33,7 +33,7 @@ get_header(); ?>
                     <label form="quote-source">Where did you find this quote? (e.g book name)</label>
                     <input type="text" id="quote-source"></textarea>
                 </div>
-                <div>
+                <div class="subjet-test">
                     <label form="quote-source-url">Provide the URL source of the quote</label>
                     <input type="url" name="quote-source-url" id="quote-source-url"></textarea>
                 </div>
