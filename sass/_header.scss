@@ -1,10 +1,9 @@
 #page {
   display: block;
   margin: 0 auto;
-  max-width: 600px;
   padding: 2.5%;
   width: 100%;
-
+  font-size: 20px;
   color: #fff;
   font-family: Exo Web, sans-serif;
   font-size: 1rem;
@@ -15,13 +14,20 @@
   }
 
   img {
-    display: block;
     height: auto;
-    width: 700px;
+    width: 300px;
     max-width: 100%;
-    margin: 0 auto;
-    border: 0;
     cursor: pointer;
     height: auto;
+
+    @include tablet {
+      width: 500px;
+      font-size: 1.75rem;
+    }
+    @include desktop {
+      width: 700px;
+      @include center-block;
+      font-size: 2.5rem;
+    }
   }
 }
