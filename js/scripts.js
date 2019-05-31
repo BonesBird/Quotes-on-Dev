@@ -38,3 +38,19 @@
 //   })(jQuery);
 
 // end of example
+
+(function() {
+  //doc ready short hand...
+  $(function() {
+    $('#new-quote-button').on('click', getRandomQuote);
+    function getRandomQuote(event) {
+      $.ajax({
+        method: 'get',
+        url:
+          api_vars.rest_url +
+          'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1'
+      }).done(function(data) {});
+    }
+  });
+  //end of doc ready
+})(jQuery);
