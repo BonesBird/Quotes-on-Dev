@@ -44,13 +44,13 @@
   $(function() {
     let lastPage = '';
     //events
-    $('#quote-submission-form').on('submit', postQuote);
+    $('#quote-sub-form').on('submit', postQuote);
 
     $('#new-quote-button').on('click', getRandomQuote);
 
     function getRandomQuote(event) {
-      event.preventDeafult();
-
+      event.preventDefault();
+      console.log('getquotes');
       lastPage = document.URL;
 
       $.ajax({
@@ -77,28 +77,36 @@
       });
     }
     function postQuote(event) {
-      event.preventDeafult();
+      event.preventDefault();
       console.log('form submitted');
       const quoteAuthor = $('#quote-author').val();
-      if(quoteAuthor !== '')
-      postAjax();
-    }
-    function postAjax(){
-    $.ajax({
-              method: 'post',
-              url: api_vars.ajax_url + 'wp/v2posts',
-              data: {
-                title:'A new post',
-                content: 'the most amazing quote by gordan ramsey',
-                status: 'pending'
-                // _qod_quote_source:
-                // qod_quote_url:
-              },beforeSend: function(xhr){
-                xhr.setRequestHeader('X-WP-wpapi_nonce');
-              }
-
-  )}).done(function){
-
-  }).fail(function)(){
-
-  });})}(jQuery);
+      if (quoteAuthor !== '') {
+        postAjax();
+      } else {
+        console.log('author not set');
+      }
+      function postAjax() {
+        $.ajax({
+          method: 'post',
+          url: api_vars.rest_url + 'wp/v2/posts',
+          data: {
+            title: quoteAuthor,
+            content: 'the most amazing quote by gordan ramsey',
+            status: 'pending'
+            // _qod_quote_source:
+            // qod_quote_url:
+          },
+          beforeSend: function(xhr) {
+            xhr.setRequestHeader('X-WP-Nonce', api_vars.wpapi_nonce);
+          }
+        })
+          .done(function() {
+            console.log('quote sent');
+          })
+          .fail(function() {
+            console.log('something went wrong');
+          }); // end of ajax
+      } // end of postAjax
+    } // postQuote
+  }); // end of doc ready
+})(jQuery);
