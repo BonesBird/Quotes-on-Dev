@@ -1,9 +1,16 @@
-ul li {
+ul,
+li {
   display: inline;
+  list-style: none;
+  margin-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 21px;
+  line-height: 2;
   a {
     color: green;
   }
 }
 h2 {
-  color: green;
+  color: white;
 }

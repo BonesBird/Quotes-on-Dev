@@ -669,13 +669,24 @@ object {
       .site-footer .site-info .menu-item a {
         color: green; }
 
-ul li {
-  display: inline; }
-  ul li a {
+ul,
+li {
+  display: inline;
+  list-style: none;
+  margin-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 21px;
+  line-height: 2; }
+  ul a,
+  li a {
     color: green; }
 
 h2 {
-  color: green; }
+  color: white; }
 
 body {
   display: -webkit-box;
@@ -726,9 +737,7 @@ body {
   color: white;
   display: block;
   margin: 0 auto;
-  max-width: 600px;
-  max-width: 1000px;
-  max-width: 1080px;
+  max-width: 900px;
   padding: 2.5%;
   font-family: Exo Web, sans-serif;
   font-size: 1rem;
