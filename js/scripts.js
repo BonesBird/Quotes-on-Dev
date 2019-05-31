@@ -49,10 +49,16 @@
         url:
           api_vars.rest_url +
           'wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1'
-      }).done(function(data) {
-        const randomQuote = data[0];
-        //return the dom array
-      });
+      })
+        .done(function(data) {
+          const randomQuote = data[0];
+          history.pushState(null, null, randomQuote.slug);
+
+          //return the dom array
+        })
+        .fail(function(error) {
+          console.log(lastPage);
+        });
     }
   });
   //end of doc ready
