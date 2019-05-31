@@ -748,7 +748,14 @@ p {
   display: block;
   margin: 5px;
   max-width: 693px;
-  justify-items: space-between; }
+  justify-items: space-between;
+  font-size: 20px; }
+  @media (min-width: 620px) {
+    p {
+      font-size: 28px; } }
+  @media (min-width: 620px) and (min-width: 1080px) {
+    p {
+      font-size: 40px; } }
 
 body {
   display: -webkit-box;
