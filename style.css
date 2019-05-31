@@ -741,6 +741,15 @@ button {
           box-shadow: none;
   text-shadow: none; }
 
+p {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 5px;
+  display: block;
+  margin: 5px;
+  max-width: 693px;
+  justify-items: space-between; }
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -750,7 +759,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: black;
+  background-color: #212121;
   color: white;
   display: block;
   margin: 0 auto;
@@ -785,7 +794,9 @@ body {
       color: #0c0;
       position: absolute;
       top: 18px;
-      left: -110px; }
+      left: -110px;
+      margin: 5px;
+      padding: 5px; }
     .content-area::after {
       font-family: 'FontAwesome';
       font-size: 7em;
@@ -793,4 +804,6 @@ body {
       color: #0c0;
       position: absolute;
       top: 18px;
-      right: -40px; } }
+      right: -40px;
+      margin: 5px;
+      padding: 5px; } }

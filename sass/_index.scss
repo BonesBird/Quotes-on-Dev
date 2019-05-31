@@ -10,12 +10,20 @@ button {
   box-shadow: none;
   text-shadow: none;
 }
+p {
+  box-sizing: content-box;
+  padding: 5px;
+  display: block;
+  margin: 5px;
+  max-width: 693px;
+  justify-items: space-between;
+}
 
 body {
   display: flex;
   align-content: center;
   justify-content: center;
-  background-color: black;
+  background-color: rgb(33, 33, 33);
   color: white;
   display: block;
   margin: 0 auto;
@@ -51,6 +59,8 @@ body {
       position: absolute;
       top: 18px;
       left: -110px;
+      margin: 5px;
+      padding: 5px;
     }
     &::after {
       font-family: 'FontAwesome';
@@ -60,6 +70,8 @@ body {
       position: absolute;
       top: 18px;
       right: -40px;
+      margin: 5px;
+      padding: 5px;
     }
   }
 }
