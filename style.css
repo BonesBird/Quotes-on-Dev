@@ -679,7 +679,6 @@ object {
 
 ul,
 li {
-  display: inline;
   list-style: none;
   margin-left: 0;
   display: -webkit-box;
@@ -692,7 +691,8 @@ li {
   ul a,
   li a {
     color: green;
-    text-decoration: none; }
+    text-decoration: none;
+    margin-right: 1.1rem; }
 
 h1 {
   font-size: 32px; }
@@ -792,6 +792,9 @@ body {
             box-sizing: inherit; }
   body ul {
     margin: 0px -32px -0.5rem -2.5rem; }
+
+section {
+  max-width: 643px; }
 
 .content-area {
   position: relative;
