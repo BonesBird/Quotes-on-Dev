@@ -651,8 +651,19 @@ object {
         margin-right: auto;
         font-size: 2.5rem; } }
 
+#site-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .site-footer {
-  display: block; }
+  display: block;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  float: right; }
   .site-footer .site-info {
     -webkit-box-pack: end;
         -ms-flex-pack: end;

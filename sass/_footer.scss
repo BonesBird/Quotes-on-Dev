@@ -1,5 +1,12 @@
+#site-navigation {
+  display: flex;
+}
+
 .site-footer {
   display: block;
+  flex-wrap: wrap;
+  display: flex;
+  float: right;
 
   .site-info {
     justify-content: flex-end;

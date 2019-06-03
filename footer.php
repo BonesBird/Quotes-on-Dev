@@ -13,11 +13,12 @@
 	<div class="site-info">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
+			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false" style=""><?php echo esc_html('Primary Menu'); ?></button>
 			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu'));
 			?>
 
-			<p>Brought to you by<a href="https://www.redacademy.com/">Red Academy</a></p>
+			<span style="padding-left: 31px; line-height: 3.3; display: inline-flex ;">Brought to you by<a href="https://www.redacademy.com/" style="color:green;"></span>
+			<span style="padding-left: 10px; line-height: 3.3; display: inline-flex ;"> Academy</a></span>
 
 		</nav>
 		<!-- #site-navigation -->
